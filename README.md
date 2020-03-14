@@ -6,6 +6,8 @@ memory-cache-issue
 
 Kernel read and write operations operate on main memory. Whenever any read or write operation is performed, the kernel first needs to copy the required data into memory:
 
+The du command, short for "disk usage" reports the estimated amount of disk space used by given files or directories
+
 Read operation:
 - go to disk and search for data
 - write the data from disk into memory
@@ -21,18 +23,15 @@ To check and verify cache operation:
  - cat > XYZ
  - hi how r u?
  - ^C
-  
+ # time cat XYZ (check before and after cache clear. )
  - sync
  - echo 3 > /proc/sys/vm/drop_caches  
 
-time cat XYZ
 
-check before and after cache clear. 
-
-Details: https://access.redhat.com/solutions/67610
+# Details: https://access.redhat.com/solutions/67610
 
 
-The du command, short for "disk usage" reports the estimated amount of disk space used by given files or directories
+
 
 To find out Cached file size :
  -  git clone  https://github.com/yazgoo/linux-ftools.git
