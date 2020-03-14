@@ -45,9 +45,9 @@ sudo make install
 
 
 Usages: 
-  linux-fincore --only-cached --pages=false --summarize --only-cached /var/log/messages
-  linux-fincore --only-cached --pages=false --summarize --only-cached $(find /var/lib/mysql/ -type f)
-  inux-fincore --only-cached --pages=false --summarize --only-cached $(find / -name docker)
+ - linux-fincore --only-cached --pages=false --summarize --only-cached /var/log/messages
+ - linux-fincore --only-cached --pages=false --summarize --only-cached $(find /var/lib/mysql/ -type f)
+ - inux-fincore --only-cached --pages=false --summarize --only-cached $(find / -name docker)
   
   
   Cleaning the Page Cache
