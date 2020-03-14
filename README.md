@@ -18,13 +18,12 @@ Write Operation:
 - copy the modified data back to disk
 
 To check and verify cache operation:
-
-cat > XYZ
-  hi how r u?
-  ^C
+ - cat > XYZ
+ - hi how r u?
+ - ^C
   
- sync
- echo 3 > /proc/sys/vm/drop_caches  
+ - sync
+ - echo 3 > /proc/sys/vm/drop_caches  
 
 time cat XYZ
 
@@ -36,12 +35,11 @@ Details: https://access.redhat.com/solutions/67610
 The du command, short for "disk usage" reports the estimated amount of disk space used by given files or directories
 
 To find out Cached file size :
-
-git clone  https://github.com/yazgoo/linux-ftools.git
-cd linux-ftools/
-./configure
-make
-sudo make install
+ -  git clone  https://github.com/yazgoo/linux-ftools.git
+ -  cd linux-ftools/
+ -  ./configure
+ -  make
+ -  sudo make install
 
 
 Usages: 
